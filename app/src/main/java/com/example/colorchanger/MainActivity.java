@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
         binding.setClick(this);
-        mConstraint = findViewById(R.id.constraint);
+        mConstraint = binding.constraint;
         binding.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
